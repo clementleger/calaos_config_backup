@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calaos:ioconfig xmlns:calaos="http://www.calaos.fr">
+    <calaos:home>
+        <calaos:room name="Cuisine" type="cuisine" hits="0">
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_23" io_type="input" name="Interrupteur cuisine droite (1)" node_id="42" port="14987" sensor_id="51" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_24" io_type="input" name="Interrupteur cuisine gauche (1)" node_id="42" port="14987" sensor_id="50" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_25" io_type="input" name="Interrupteur cuisine gauche (2)" node_id="42" port="14987" sensor_id="52" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_17" io_type="input" name="Interrupteur volet gauche haut" node_id="42" port="14987" sensor_id="35" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_18" io_type="input" name="Interrupteur volet gauche bas" node_id="42" port="14987" sensor_id="34" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_19" io_type="input" name="Interrupteur volet droit haut" node_id="42" port="14987" sensor_id="33" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_20" io_type="input" name="Interrupteur volet droit bas" node_id="42" port="14987" sensor_id="36" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="shutter" host="192.168.1.22" id="io_0" io_type="output" name="Volet Cuisine" node_id_down="42" node_id_up="42" port="14987" sensor_id_down="1" sensor_id_up="2" time="25" type="MySensorsOutputShutter" visible="true"/>
+        </calaos:room>
+        <calaos:room name="Salon" type="salon" hits="0">
+            <calaos:input months="111111111111" enabled="true" gui_type="time_range" id="input_0" io_type="input" name="Ouverture" type="InPlageHoraire" visible="false">
+                <calaos:lundi>
+                    <calaos:plage start_hour="7" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="7" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:lundi>
+                <calaos:mardi>
+                    <calaos:plage start_hour="7" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="7" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:mardi>
+                <calaos:mercredi>
+                    <calaos:plage start_hour="7" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="7" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:mercredi>
+                <calaos:jeudi>
+                    <calaos:plage start_hour="7" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="7" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:jeudi>
+                <calaos:vendredi>
+                    <calaos:plage start_hour="7" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="7" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:vendredi>
+                <calaos:samedi/>
+                <calaos:dimanche/>
+            </calaos:input>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_27" io_type="input" name="Interrupteur toile haut" node_id="42" port="14987" sensor_id="46" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_28" io_type="input" name="Interrupteur toile bas" node_id="42" port="14987" sensor_id="45" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_29" io_type="input" name="Interrupteur salon droite (1)" node_id="42" port="14987" sensor_id="44" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_30" io_type="input" name="Interrupteur salon droite (2)" node_id="42" port="14987" sensor_id="41" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gui_type="switch" host="192.168.1.22" id="io_31" io_type="input" name="Interrupteur salon gauche (1)" node_id="42" port="14987" sensor_id="42" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_32" io_type="input" name="Interrupteur salon gauche (2)" node_id="42" port="14987" sensor_id="43" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input months="111111111111" enabled="true" gui_type="time_range" id="input_1" io_type="input" name="Plage Chauffage" type="InPlageHoraire" visible="false">
+                <calaos:lundi>
+                    <calaos:plage start_hour="5" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="9" end_min="0" end_sec="0" end_type="0" end_offset="1"/>
+                    <calaos:plage start_hour="17" start_min="0" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:lundi>
+                <calaos:mardi>
+                    <calaos:plage start_hour="5" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="9" end_min="0" end_sec="0" end_type="0" end_offset="1"/>
+                    <calaos:plage start_hour="17" start_min="0" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:mardi>
+                <calaos:mercredi>
+                    <calaos:plage start_hour="5" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="9" end_min="0" end_sec="0" end_type="0" end_offset="1"/>
+                    <calaos:plage start_hour="12" start_min="0" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:mercredi>
+                <calaos:jeudi>
+                    <calaos:plage start_hour="5" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="9" end_min="0" end_sec="0" end_type="0" end_offset="1"/>
+                    <calaos:plage start_hour="17" start_min="0" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:jeudi>
+                <calaos:vendredi>
+                    <calaos:plage start_hour="5" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="9" end_min="0" end_sec="0" end_type="0" end_offset="1"/>
+                    <calaos:plage start_hour="17" start_min="0" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:vendredi>
+                <calaos:samedi>
+                    <calaos:plage start_hour="6" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:samedi>
+                <calaos:dimanche>
+                    <calaos:plage start_hour="6" start_min="30" start_sec="0" start_type="0" start_offset="1" end_hour="23" end_min="30" end_sec="0" end_type="0" end_offset="1"/>
+                </calaos:dimanche>
+            </calaos:input>
+            <calaos:internal enabled="true" gui_type="var_int" id="intern_0" io_type="inout" name="Consigne Jour" rw="true" save="true" type="InternalInt" value="19" visible="true"/>
+            <calaos:internal enabled="true" gui_type="var_int" id="intern_1" io_type="inout" name="Consigne Nuit" rw="true" save="true" type="InternalInt" value="19" visible="true"/>
+            <calaos:internal enabled="true" gui_type="var_bool" id="intern_2" io_type="inout" name="Vacances" rw="true" save="true" type="InternalBool" value="false" visible="true"/>
+            <calaos:input chauffage_id="0" enabled="true" gateway="tcp" gui_type="temp" host="192.168.1.22" id="io_2" io_type="input" name="Temperature" node_id="42" port="14987" sensor_id="62" type="MySensorsInputTemp" visible="true"/>
+            <calaos:internal chauffage_id="0" id="intern_4" name="Consigne" rw="true" type="InternalInt" value="20" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="shutter" host="192.168.1.22" id="io_1" io_type="output" name="Volet Salon" node_id_down="42" node_id_up="42" port="14987" sensor_id_down="3" sensor_id_up="4" time="25" type="MySensorsOutputShutter" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.22" id="io_12" io_type="output" name="Spots télé" node_id="42" port="14987" sensor_id="22" type="MySensorsOutputLight" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.22" id="io_21" io_type="output" name="Spots coffrage" node_id="42" port="14987" sensor_id="19" type="MySensorsOutputLight" visible="true"/>
+        </calaos:room>
+        <calaos:room name="Hall" type="hall" hits="0">
+            <calaos:input enabled="true" gateway="tcp" gui_type="analog_in" host="192.168.1.22" id="io_3" io_type="input" name="Humidité" node_id="42" port="14987" sensor_id="61" type="MySensorsInputAnalog" unit="%" visible="true"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="analog_in" host="192.168.1.22" id="io_4" io_type="input" name="Pression Atmosphérique" node_id="42" port="14987" sensor_id="60" type="MySensorsInputAnalog" unit="hPa" visible="true"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_5" io_type="input" name="Bouton nucleo" node_id="42" port="14987" sensor_id="0" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_7" io_type="input" name="Interrupteur entrée gauche" node_id="42" port="14987" sensor_id="72" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_8" io_type="input" name="Interrupteur entrée droit" node_id="42" port="14987" sensor_id="73" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_9" io_type="input" name="Capteur porte" node_id="42" port="14987" sensor_id="70" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_15" io_type="input" name="Interrupteur dégagement droite" node_id="42" port="14987" sensor_id="53" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_16" io_type="input" name="Interrupteur dégagement gauche" node_id="42" port="14987" sensor_id="49" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="analog_in" host="192.168.1.22" id="io_22" io_type="input" name="Luminosité" node_id="42" port="14987" sensor_id="63" type="MySensorsInputAnalog" unit="%" visible="true"/>
+            <calaos:input enabled="true" gui_type="switch" host="192.168.1.22" id="io_26" io_type="input" name="Sonette" node_id="42" port="14987" sensor_id="71" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.22" id="io_6" io_type="output" name="Spots Dégagement" node_id="42" port="14987" sensor_id="6" type="MySensorsOutputLight" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.22" id="io_10" io_type="output" name="Spots Hall" node_id="42" port="14987" sensor_id="18" type="MySensorsOutputLight" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.12" id="io_33" io_type="output" name="Thermostat" node_id="42" port="14987" sensor_id="9" type="MySensorsOutputLight" visible="true"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.12" id="io_34" io_type="output" name="Sonnerie" node_id="42" port="14987" sensor_id="10" type="MySensorsOutputLight" visible="true"/>
+        </calaos:room>
+        <calaos:room name="Salle de bain" type="sdb" hits="0"/>
+        <calaos:room name="Chambre 1" type="chambre" hits="0">
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_13" io_type="input" name="Lit 1" node_id="42" port="14987" sensor_id="54" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:input enabled="true" gateway="tcp" gui_type="switch" host="192.168.1.22" id="io_14" io_type="input" name="Lit 2" node_id="42" port="14987" sensor_id="55" type="MySensorsInputSwitch" visible="false"/>
+            <calaos:output enabled="true" gateway="tcp" gui_type="light" host="192.168.1.22" id="io_11" io_type="output" name="Spots" node_id="42" port="14987" sensor_id="7" type="MySensorsOutputLight" visible="true"/>
+        </calaos:room>
+    </calaos:home>
+</calaos:ioconfig>

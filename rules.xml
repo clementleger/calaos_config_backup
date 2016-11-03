@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calaos:rules xmlns:calaos="http://www.calaos.fr">
+    <calaos:rule name="Spots" type="Chambre 1 Lit 1">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_13" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_11" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Spots" type="Chambre 1 Lit 2">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_14" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_11" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Lumière Hall" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_15" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_10" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Lumière dégagement" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_16" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_6" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur volet gauche haut" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_17" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_1" val="up"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur volet gauche bas" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_18" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_1" val="down"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur volet droit haut" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_19" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_0" val="up"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur volet droit bas" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_20" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_0" val="down"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur entrée gauche" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_7" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_21" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur entrée droit" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_8" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_10" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur toile haut" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_27" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_1" val="up"/>
+        </calaos:action>
+        <calaos:action type="standard">
+            <calaos:output id="io_0" val="up"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur toile bas" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_28" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_1" val="down"/>
+        </calaos:action>
+        <calaos:action type="standard">
+            <calaos:output id="io_0" val="down"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur droite (2)" type="Salon"/>
+    <calaos:rule name="Interrupteur salon droite (1)" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_29" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_21" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur salon droite (2)" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_30" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_10" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur cuisine gauche (1)" type="Cuisine">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_24" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_21" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Interrupteur salon gauche (1)" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_31" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_12" val="toggle"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Capteur porte" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_9" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_22" oper="INF" val="50"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_10" val="true"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Sonette" type="Hall">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_26" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_34" val="impulse 500 200 500 200 500 200"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Plage Chauffage Jour" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_1" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_2" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_4" val="" val_var="intern_0"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Plage Chauffage Nuit" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_1" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_2" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_4" val="" val_var="intern_1"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Changement Consigne Jour" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_1" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_0" oper="==" val="changed"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_2" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_4" val="" val_var="intern_0"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Changement Consigne Nuit" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_1" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_2" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_1" oper="==" val="changed"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_4" val="" val_var="intern_1"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Salon" type="heat on">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_2" oper="INF=" val="" val_var="intern_4"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_33" val="true"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Salon" type="heat off">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="io_2" oper="SUP" val="" val_var="intern_4"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="io_33" val="false"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Départ en vacances" type="Salon">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_2" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_4" val="10"/>
+        </calaos:action>
+    </calaos:rule>
+</calaos:rules>

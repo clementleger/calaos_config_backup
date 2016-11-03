@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<calaos:config xmlns:calaos="http://www.calaos.fr">
+    <calaos:option name="fw_version" value="0" />
+    <calaos:option name="fw_target" value="calaos_tss" />
+    <calaos:option name="show_cursor" value="true" />
+    <calaos:option name="use_ntp" value="true" />
+    <calaos:option name="device_type" value="calaos_server" />
+    <calaos:option name="dpms_enable" value="false" />
+    <calaos:option name="smtp_server" value="smtp://smtp.orange.fr" />
+    <calaos:option name="cn_user" value="xxxx" />
+    <calaos:option name="cn_pass" value="xxxx" />
+    <calaos:option name="longitude" value="2.322235" />
+    <calaos:option name="latitude" value="48.864715" />
+    <calaos:option name="smtp_port" value="25" />
+    <calaos:option name="smtp_auth" value="false" />
+</calaos:config>
